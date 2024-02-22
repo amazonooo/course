@@ -1,20 +1,20 @@
-import styles from './Home.module.css'
-import car1 from './1.webp'
+import CarItem from './car-item/CarItem.jsx'
+import {cars} from './cars.data.js'
 
-function App() {
+function Home() {
   return (
       <div>
         <h1>Cars catalog </h1>
         <div>
-          <div className={styles.item}>
-            <img src={car1} alt='car1' />
-            <h2>Car 1</h2>
-            <p>$100 000</p>
-            <button>Read more</button>
-          </div>
+          {cars.length ? (
+            cars.map(car => <CarItem key={car.id} car=
+              {car} />)
+          ) : (
+            <p>There are no cars</p>
+          )}
         </div>
       </div>
   )
 }
 
-export default App
+export default Home
