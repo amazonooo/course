@@ -12,4 +12,11 @@ export const cars = [
         price: 22545,
         image: 'https://cdn.fishki.net/upload/post/201504/02/1487817/6_006.jpg'
     },
+
+    {
+        id: 3,
+        name: 'Honda Civic 2',
+        price: 15545,
+        image: 'https://cdn.fishki.net/upload/post/201504/02/1487817/6_006.jpg'
+    },
 ]
