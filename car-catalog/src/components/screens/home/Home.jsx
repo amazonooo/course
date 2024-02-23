@@ -1,11 +1,9 @@
 import CreateCarForm from './car-item-form/CreateCarForm.jsx'
 import CarItem from './car-item/CarItem.jsx'
-import {cars} from './cars.data.js'
+import {cars as CarsData} from './cars.data.js'
 import { useMemo } from 'react'
 
 function Home() {
-  const filteredCars = useMemo(() => cars.filter(car => car.price > 20000), [])
-
   return (
       <div>
         <h1>Cars catalog </h1>
